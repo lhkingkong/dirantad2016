@@ -82,23 +82,20 @@ if ($estado == 'a') {
 }
 
 //'$usuario_id',
-$query_sql = " INSERT INTO usuarios VALUES (
-					'',						'$nombre',			'$apellido',
-					'$empresa',				'$calle',			'$no_ext',
-					'$no_int',				'$colonia',			'$localidad',		
-					'$rfc', 				'$cp',				'$ap',	
-					'$ciudad',				'$estado',			'$estado_text',		
-					'$pais', 				'$lada', 			'$tel',
-					'$fax',
-					'$email',				'$username', 		'$pass1',
-					NOW(),	'',					'$end', 			1)";
+function checkNull($intLat) {
+  return !empty($intLat) ? $intLat : "NULL";
+} 
+
+$query_sql = " 
+INSERT INTO `usuarios` (`usuario_nombre`, `usuario_apellido`, `usuario_empresa`, `usuario_calle`, `usuario_no_ext`, `usuario_no_int`, `usuario_colonia`, `usuario_localidad`, `usuario_rfc`, `usuario_cp`, `usuario_ap`, `usuario_ciudad`, `usuario_estado_id`, `usuario_estado`, `usuario_pais_id`, `usuario_lada`, `usuario_telefono`, `usuario_fax`, `usuario_email`, `usuario_username`, `usuario_password`, `usuario_fecha_inscripcion`, `usuario_fecha_activacion`, `usuario_fecha_vencimiento`, `usuario_isactive`) VALUES
+  ('$nombre', '$apellido', '$empresa', '$calle', '$no_ext', '$no_int', '$colonia', '$localidad', '$rfc', ".checkNull($cp).", ".checkNull($ap).", '$ciudad', ".checkNull($estado).", '$estado_text', '$pais', ".checkNull($lada).", ".checkNull($tel).", ".checkNull($fax).", '$email', '$username', '$pass1', NOW(), NULL, '$end', 1)";
 //echo $query_sql;
 $resultado = mysql_query($query_sql);
 if ($resultado === false) { //EXCEPCION
     mysql_close($db);
     return;
 }
-	
+
 // Envio de los emails
 $nombre_completo = utf8_encode($nombre." ".$apellido);	
 

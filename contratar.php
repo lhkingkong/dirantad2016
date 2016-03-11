@@ -70,7 +70,9 @@ include ("inc/interfaz.php");
           $("#rfc").val("");
         }
 
-        function insertarRegistro() {
+        function insertarRegistro(e) {
+          e.stopImmediatePropagation();
+          e.preventDefault();
           if ($registrandose)
             return false;
           if (!validarFormulario()) {
@@ -323,7 +325,7 @@ include ("inc/interfaz.php");
           <section class="home-section bg-gray bg-light-alfa-50 parallax-2 btouleau-with-navbar" data-background="images/portada.jpg" id="informacion">
           <div class="container relative">
             <div class="row">
-              <form class="form-horizontal" id="formulario" name="formulario" method="POST" action="insertarRegistro.php" onSubmit="return valida(this);">
+              <form class="form-horizontal" id="formulario" name="formulario" method="POST">
                 <div class="form-group">
                   <label for="inputEmail3" class="col-sm-3 control-label">Nombre de usuario *</label>
                   <div class="col-sm-9">
@@ -495,7 +497,7 @@ include ("inc/interfaz.php");
 
                 <div class="form-group">
                   <div class="col-sm-offset-3 col-sm-9">
-                    <button type="button" class="btn btn-primary" onclick="insertarRegistro()">Registrar</button>
+                    <button type="button" class="btn btn-primary" onclick="insertarRegistro(event)">Registrar</button>
                   </div>
                 </div>
               </form>
