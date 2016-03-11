@@ -1,0 +1,892 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+
+/* Table of Contents
+==================================================
+    #Base 960 Grid
+    #Tablet (Portrait)
+    #Mobile (Portrait)
+    #Mobile (Landscape)
+    #Clearing */
+
+/* #Base 960 Grid
+================================================== */
+
+.topPage{
+	box-shadow:2px 0 3px #333;
+	background:url(../images/header-6.png) no-repeat right 0 #CC1010;
+}
+.container {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+	padding: 0;
+	background: #ffffff;
+}
+.nav-container {
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	width: 960px;
+}
+.contenidoA {
+	padding-top:15px;
+	padding-bottom:15px;
+}
+.loginForm .contenidoA {
+	padding:0 !important;
+}
+margin: 10px auto;
+	box-shadow: 3px 3px 7px #333;
+	border-radius:5px;
+.container .column, .container .columns {
+	float: left;
+	display: inline;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.row {
+	margin-bottom: 20px;
+}
+/* Nested Column Classes */
+    .column.alpha, .columns.alpha {
+	margin-left: 0;
+}
+.column.omega, .columns.omega {
+	margin-right: 0;
+}
+/* Base Grid */
+    .container .one.column, .container .one.columns {
+	width: 40px;
+}
+.container .two.columns {
+	width: 100px;
+}
+.container .three.columns {
+	width: 160px;
+}
+.container .four.columns {
+	width: 200px;
+}
+.container .five.columns {
+	width: 280px;
+}
+.container .six.columns {
+	width: 340px;
+}
+.container .seven.columns {
+	width: 400px;
+}
+.container .eight.columns {
+	width: 460px;
+}
+.container .nine.columns {
+	width: 520px;
+}
+.container .ten.columns {
+	width: 580px;
+}
+.container .eleven.columns {
+	width: 640px;
+}
+.container .twelve.columns {
+	width: 700px;
+}
+.container .thirteen.columns {
+	width: 760px;
+}
+.container .fourteen.columns {
+	width: 820px;
+}
+.container .fifteen.columns {
+	width: 880px;
+}
+.container .sixteen.columns {
+	width: 920px;
+	position: relative;
+}
+.container .sixteentab.columns {
+	width: 880px;
+	height:600px;
+	position: relative;
+	overflow:auto;
+}
+.container .menu {
+	width: 940px;
+	margin:0px auto;
+}
+.container .fullcontainer {
+	width: 920px;
+}
+.container .one-third.column {
+	width: 300px;
+}
+.ninesixcero .container .one-third.column {
+	width: 320px;
+}
+.container .two-thirds.column {
+	width: 620px;
+}
+.container .one-second.column.inicio_column {
+	position:relative;
+	display:inline-block;
+}
+.container .one-second.column {
+	width: 440px;
+}
+.fullscreen {
+	margin:0 auto;
+}
+.fullheader {
+	/*background: url("../images/cabezaroja.png");*/
+	/*background-color:#600;
+	background-image:url(../images/bg-styleC2.png);
+	background-repeat:repeat-x;*/
+	/*background-position:0 90px;*/
+}
+#divForm form{
+	float:left;
+	margin-top:10px;
+}
+.logoANTAD{
+	background:url(../images/logoANTAD-bevel.png) no-repeat center center;
+	min-height:159px;
+	min-width:195px;
+	width:195px;
+	margin-left:5%;
+	display:inline-block;
+	padding:20px;
+}
+.fullheader .header {
+	width: 960px;
+	margin:0 auto;
+	padding-top:10px;
+	padding-bottom:5px;
+	text-align:center;
+}
+.fullfooter .footer {
+	width: 960px;
+	margin:0 auto;
+}
+.fullfooter {
+	position: relative;
+	width: 100%;
+	margin: 0 0 0 0;
+	padding: 0;
+}
+.fullola .ola {
+	width: 960px;
+	margin:0 auto;
+	background-color: #ffffff;
+}
+.fullola {
+	position: relative;
+	width: 100%;
+	margin: 0 0 0 0;
+	padding: 0;
+}
+.thetitle {
+	width: 940px;
+	margin:0 auto;
+	background:url("images/featured_bg.png") no-repeat top left;
+}
+/* Offsets */
+    .container .offset-by-one {
+	padding-left: 60px;
+}
+.container .offset-by-two {
+	padding-left: 120px;
+}
+.container .offset-by-three {
+	padding-left: 180px;
+}
+.container .offset-by-four {
+	padding-left: 240px;
+}
+.container .offset-by-five {
+	padding-left: 300px;
+}
+.container .offset-by-six {
+	padding-left: 360px;
+}
+.container .offset-by-seven {
+	padding-left: 420px;
+}
+.container .offset-by-eight {
+	padding-left: 480px;
+}
+.container .offset-by-nine {
+	padding-left: 540px;
+}
+.container .offset-by-ten {
+	padding-left: 600px;
+}
+.container .offset-by-eleven {
+	padding-left: 660px;
+}
+.container .offset-by-twelve {
+	padding-left: 720px;
+}
+.container .offset-by-thirteen {
+	padding-left: 780px;
+}
+.container .offset-by-fourteen {
+	padding-left: 840px;
+}
+.container .offset-by-fifteen {
+	padding-left: 900px;
+}
+.titulomovil {
+	width: 280px;
+	display:none;
+}
+.bigOrg{
+	display:none;
+}
+.smallOrg{
+	display:block;
+}
+
+@media only screen and (min-width: 959px){
+.inicioImage{
+	background:url(../images/welcome.jpg) no-repeat;
+	min-height:300px;
+}
+.inicioImage .texto{
+	display:none;
+}
+.columnB {
+    float: left;
+    width: 33%;
+}
+.organigrama{
+	width:850px;
+	margin:auto;
+	background-image:url(../images/diagrama.png);
+	background-position:0px -10px;
+	padding-left:20px;
+	background-repeat:no-repeat;
+	
+}
+.organigrama div{
+	background-color:#CCC;
+	background-image:url(../images/bg-styleC2.png);
+	background-repeat:repeat-x;
+	border: 1px solid;  
+	border-left-color:#CCCCCC;  
+	border-top-color:#EAEAEA;  
+	border-right-color:#AEAEAE;  
+	border-bottom-color:#909090;
+	padding:5px;
+	border-radius:2px;
+	margin:2px auto;
+	text-align:center;
+	width:150px;
+	color:#333;
+	text-shadow:2px 2px 5px #FFF;
+}
+.organigrama div:hover{
+	background-color:#666;
+	color:#FFF;
+	text-shadow:2px 2px 5px #333;
+	cursor:pointer;
+}
+#oC{
+	float:left;
+	width:300px;
+}
+#oD{
+	float:right;
+	width:300px;
+}
+#oE{
+	float:left;
+	width:25%px;
+	margin:2px;
+}
+#oF{
+	float:left;
+	width:25%px;
+	margin:2px;
+}
+#oG{
+	float:right;
+	width:25%px;
+	margin:2px;
+}
+#oH{
+	float:right;
+	width:25%px;
+	margin:2px;
+}
+#oM,#oN,#oI,#oJ,#oK,#oL,#oP{
+	float:left;
+	width:20%px;
+	margin:2px;
+}
+
+.columna1{
+	float:left; 
+	width:50%;
+}
+#contenidoMensaje, .contenidoMensaje{
+	max-height:400px;
+}
+.bigOrg{
+	display:block;
+}
+.smallOrg{
+	display:none;
+}
+.wrapDiv{
+	position:relative;
+}
+#contenedorDatos{
+	height:780px;
+}
+.header .dirantadLogo{
+	margin-left:20%;
+}
+/* #Tablet (Portrait)
+================================================== */
+
+/* Note: Design for a width of 768px */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+ .container {
+width: 728px;
+}
+.nav-container {
+width: 728px;
+}
+.fullfooter img{
+	max-width:728px;
+}
+ .container .column, .container .columns {
+margin-left: 5px;
+margin-right: 5px;
+}
+ .column.alpha, .columns.alpha {
+margin-left: 0;
+margin-right: 5px;
+}
+ .column.omega, .columns.omega {
+margin-right: 0;
+margin-left: 5px;
+}
+ .alpha.omega {
+margin-left: 0;
+margin-right: 0;
+}
+ .container .one.column, .container .one.columns {
+width: 28px;
+}
+ .container .two.columns {
+width: 66px;
+}
+ .container .three.columns {
+width: 114px;
+}
+ .container .four.columns {
+width: 162px;
+}
+ .container .five.columns {
+width: 210px;
+}
+ .container .six.columns {
+width: 258px;
+}
+ .container .seven.columns {
+width: 306px;
+}
+ .container .eight.columns {
+width: 354px;
+}
+ .container .nine.columns {
+width: 402px;
+}
+ .container .ten.columns {
+width: 450px;
+}
+ .container .eleven.columns {
+width: 498px;
+}
+ .container .twelve.columns {
+width: 546px;
+}
+ .container .thirteen.columns {
+width: 594px;
+}
+ .container .fourteen.columns {
+width: 642px;
+}
+ .container .fifteen.columns {
+width: 690px;
+}
+ .container .sixteen.columns {
+width: 698px;
+}
+ .fullheader .header {
+width: 728px;
+margin:0 auto;
+}
+.fullfooter .footer {
+width: 728px;
+margin:0 auto;
+background-color: #ffffff;
+}
+ .container .one-third.column {
+width: 226px;
+}
+ .container .two-thirds.column {
+width: 482px;
+}
+ .container .one-second.column {
+width: 350px;
+}
+
+/* Offsets */
+.container .offset-by-one {
+padding-left: 38px;
+}
+ .container .offset-by-two {
+padding-left: 86px;
+}
+ .container .offset-by-three {
+padding-left: 134px;
+}
+ .container .offset-by-four {
+padding-left: 182px;
+}
+ .container .offset-by-five {
+padding-left: 230px;
+}
+ .container .offset-by-six {
+padding-left: 278px;
+}
+ .container .offset-by-seven {
+padding-left: 326px;
+}
+ .container .offset-by-eight {
+padding-left: 374px;
+}
+ .container .offset-by-nine {
+padding-left: 422px;
+}
+ .container .offset-by-ten {
+padding-left: 470px;
+}
+ .container .offset-by-eleven {
+padding-left: 518px;
+}
+ .container .offset-by-twelve {
+padding-left: 566px;
+}
+ .container .offset-by-thirteen {
+padding-left: 614px;
+}
+ .container .offset-by-fourteen {
+padding-left: 662px;
+}
+ .container .offset-by-fifteen {
+padding-left: 710px;
+}
+hr{
+	max-width:758px;
+}
+.container p{
+	margin-left:2%;
+}
+}
+
+/*  #Mobile (Portrait)
+================================================== */
+
+/* Note: Design for a width of 320px */
+
+@media only screen and (max-width: 767px) {
+ .container {
+width: 320px;
+}
+.nav-container {
+width: 320px;
+}
+ .container .columns, .container .column {
+margin: 0;
+}
+ .container .one.column, .container .one.columns, .container .two.columns, .container .three.columns, .container .four.columns, .container .five.columns, .container .six.columns, .container .seven.columns, .container .eight.columns, .container .nine.columns, .container .ten.columns, .container .eleven.columns, .container .twelve.columns, .container .thirteen.columns, .container .fourteen.columns, .container .fifteen.columns, .container .sixteen.columns, .container .fullscreen, .container .one-third.column, .container .one-second.column, .container .two-thirds.column {
+width: 280px;
+margin:0 10px 0 10px;
+}
+
+ .fullheader .header {
+width: 320px;
+margin:0 auto;
+}
+ .fullfooter .footer {
+width: 320px;
+margin:0 auto;
+background-color: #ffffff;
+}
+        /* Offsets */
+        .container .offset-by-one, .container .offset-by-two, .container .offset-by-three, .container .offset-by-four, .container .offset-by-five, .container .offset-by-six, .container .offset-by-seven, .container .offset-by-eight, .container .offset-by-nine, .container .offset-by-ten, .container .offset-by-eleven, .container .offset-by-twelve, .container .offset-by-thirteen, .container .offset-by-fourteen, .container .offset-by-fifteen {
+padding-left: 0;
+}
+	
+		/* ---------------------------------------- */
+		/*	Main Navigation
+		/* ---------------------------------------- */
+
+		#main-nav {
+ float: none;
+ margin: 10px 0 20px;
+}
+ #main-nav li {
+width: 50%;
+}
+ #main-nav a {
+ border-bottom-color: #efefef;
+ padding: 16px 20px 30px;
+}
+ #main-nav > ul > li:last-child a {
+border-bottom-color: transparent;
+}
+ #main-nav > ul > .current:last-child a {
+border-bottom-color: #f15a23;
+}
+ #main-nav ul ul {
+width: 100%;
+}
+ .no-js #main-nav li:hover > ul, #main-nav ul ul {
+top: 72px;
+}
+ #main-nav ul ul li {
+width: auto;
+}
+ #main-nav ul ul li:first-child > a {
+border-top: none;
+}
+ #main-nav ul ul li:last-child > a {
+border-bottom: none;
+}
+ #main-nav ul ul ul {
+ border-bottom: 1px solid #252525;
+ -webkit-box-shadow: none;
+ -moz-box-shadow: none;
+ box-shadow: none;
+ display: block !important;
+ left: 0 !important;
+ margin: 0;
+ top: 0 !important;
+ position: relative;
+}
+ #main-nav ul ul li:last-child ul {
+ border-top: 1px solid #252525;
+ border-bottom: none;
+}
+ #main-nav ul ul ul a {
+padding-left: 30px;
+}
+ #main-nav ul ul ul li:first-child a {
+border-top: 1px solid #4c4c4c;
+}
+ .content_block {
+display:none;
+}
+.titulomovil {
+display:block;
+}
+}
+
+
+/* #Mobile (Landscape)
+================================================== */
+
+/* Note: Design for a width of 480px */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+		.header .dirantadLogo{
+	margin-left:0;
+}
+ .container {
+width: 420px;
+}
+.nav-container {
+width: 420px;
+}
+ .container .columns, .container .column {
+margin: 0;
+}
+ .container .one.column, .container .one.columns, .container .two.columns, .container .three.columns, .container .four.columns, .container .five.columns, .container .six.columns, .container .seven.columns, .container .eight.columns, .container .nine.columns, .container .ten.columns, .container .eleven.columns, .container .twelve.columns, .container .thirteen.columns, .container .fourteen.columns, .container .fifteen.columns, .container .sixteen.columns, .container .one-third.column, .container .two-thirds.column {
+width: 400px;
+}
+ .fullheader .header {
+width: 420px;
+margin:0 auto;
+}
+ .fullfooter .footer {
+width: 420px;
+margin:0 auto;
+background-color: #ffffff;
+}
+ .content_block {
+display:none;
+}
+.titulomovil {
+display:block;
+}
+.sesion{
+	font-size:12px;
+	width:50% !important;
+}
+}
+
+@media only screen and (max-width: 480px) {
+	.header .dirantadLogo{
+	margin-left:0;
+}
+	.boton div{
+	width:100% !important;
+}
+.sesion{
+	display:none;
+}
+/*.logoANTAD{
+	background:url(../images/logoANTAD.png) no-repeat;
+	min-height:127px;
+	min-width:156px;
+	width:156px;
+}*/
+}
+/* #Clearing
+================================================== */
+
+    /* Self Clearing Goodness */
+    .container:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+/* Self Clearing Goodness */
+    .nav-container:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+/* Use clearfix class on parent to clear nested columns,
+    or wrap each row of columns in a <div class="row"> */
+    .clearfix:before, .clearfix:after, .row:before, .row:after {
+	content: '\0020';
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+.row:after, .clearfix:after {
+	clear: both;
+}
+.row, .clearfix {
+	zoom: 1;
+}
+/* You can also use a <br class="clear" /> to clear columns */
+    .clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+/* Bruno Touleau
+
+
+	/* -------------------------------------------------- */
+	/*	Main Navigation
+	/* -------------------------------------------------- */
+
+	#main-nav {
+	position:relative;
+	margin:auto;
+}
+#main-nav > ul {
+/*margin: -6px 0 0;*/
+}
+#main-nav li {
+	list-style: none;
+	float: left;
+	margin: 0;
+	position: relative;
+}
+#main-nav a {
+	/*border-bottom: 1px solid transparent;
+					border-top: 6px solid transparent;
+	border: 1px solid white;*/
+	/*#cc0505;*/
+	font-family: 'Open Sans', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	display: block;
+	letter-spacing: -0.08px;
+	margin:0;
+	padding: 12px 29px;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	z-index: 52;
+	text-decoration:none;
+	
+	background-image:url(../images/bg-light50.png);
+	background-repeat:repeat-x;
+	border: 1px solid transparent;
+	border-right: 1px solid rgba(255,255,255,0.3);
+	
+}
+#main-nav>ul>li >a {
+color: #FFF;
+}
+#main-nav>ul>li >a:first{
+	border-left: 1px solid rgba(255,255,255,0.3) !important;
+}
+.ie7 #main-nav a {
+	padding: 33px 20px;
+}
+#main-nav a:after {
+	color: #cc0505;
+	content: attr(data-description);
+	font-size: 11px;
+	font-style: italic;
+	font-weight: 400;
+	display: block;
+	line-height: 0;
+	margin: 3px 0 -3px;
+	text-align: center;
+	text-transform: lowercase;
+}
+#main-nav a:hover, #main-nav .hover > a, #main-nav .current > a, #main-nav a.hover_effect {
+	border: 1px solid rgba(255,255,255,0.7);
+/*	border-right: 1px solid rgba(255,255,255,0.7);*/
+	background:url(../images/bg-styleC2.png) repeat-x;
+	color: #FFF;
+	text-shadow:1px 1px 1px #333;
+	/*color:#FEFEFE;*/
+}
+
+#main-nav .mInicio > a {
+	border-bottom-color: #f15a23;
+	border-top-color: #f15a23;
+	/*color: #f15a23;*/
+	color:#FEFEFE;
+	background: #666;
+	background-image:url(../images/bg-styleC.png);
+	background-repeat:repeat-x;
+	border: 1px solid #EFEFEF;
+}
+
+#main-nav a:hover, #main-nav .hover > a, #main-nav .current > a {
+	/*background: #990000;
+	background-image:url(../images/bg-styleC.png);
+	background-repeat:repeat-x;
+	border-top: 1px solid #FFF;
+	border-left: 1px solid #CFF;
+	border-right: 1px solid #D66;
+	border-bottom: 1px solid #C33;*/
+}
+#main-nav >ul>li>a:hover, #main-nav >ul.hover > a, #main-nav >ul.current > a {
+/*border-radius:5px;*/
+}
+.not-ie #main-nav .current:after {
+	background: #f15a23;
+	bottom: -2.5px;
+	content: '';
+	left: 50%;
+	display: block;
+	height: 5px;
+	margin: 0 0 0 -2.5px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	position: absolute;
+	width: 5px;
+}
+/* Dropdown */
+.no-js #main-nav li:hover > ul {
+	display: block;
+	top: 40px;
+}
+#main-nav ul ul {
+	background: #831619;
+	-webkit-box-shadow: 3px 3px 5px #333;
+	-moz-box-shadow: 2.5px 2.5px 5px #333);
+	box-shadow: 3px 3px 5px #333;
+	display: none;
+	left: 0;
+	padding: 0;
+	position: absolute;
+	top: 25px;
+	width: 200px;
+	z-index: 53;
+	border-radius:4px;
+	margin-top:22px;
+}
+#main-nav ul ul li {
+	float: none;
+}
+#main-nav ul ul a {
+	border: 1px solid transparent;
+	border-bottom: 1px solid #FFF;
+	color: #fff;
+	display: block;
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+	font-size: 11px;
+	letter-spacing: 0;
+	font-weight: 400;
+	padding: 8px 20px !important;
+	text-align: left;
+	text-transform: none;
+	text-shadow: 0 1px 0 rgba(51,51,51,.5);
+	background:#CC1010 !important;
+	border: 1px solid tranparent !important;
+	border-bottom: 1px solid rgba(255,255,255,0.5) !important;
+}
+#main-nav ul ul a:hover, #main-nav ul ul .hover > a, #main-nav ul ul .current > a, #main-nav ul ul .current > a:hover {
+	/*background: #f15a23;*/
+	background:url(../images/bg-lightH.png) repeat-y #CC1010 !important;
+	color: #FFF;
+	border: 1px solid tranparent !important;
+	border-bottom: 1px solid rgba(255,255,255,0.7) !important;
+	box-shadow: 0 0 3px #333;
+	z-index:100;
+}
+#main-nav ul li:hover ul, #main-nav ul a.hover_effect ul {
+	display:block;
+}
+.not-ie #main-nav ul ul .current:after {
+	display: none;
+}
+/* Sub Dropdown */
+#main-nav ul ul ul {
+	left: 200px !important;
+	top: 0 !important;
+}
+/* Responsive Nav */
+#main-nav .responsive-nav {
+	background-image: url(../img/responsive-nav-bg.png);
+	background-position: center right;
+	background-repeat: no-repeat;
+	display: none;
+	width: 100%;
+}

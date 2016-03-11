@@ -1,0 +1,33 @@
+.text_higlight{
+        font-weight: bold;
+        color:#A00 !important;
+}
+.btouleau-modal-wrapper{
+  display: none;
+}
+.btouleau-modal-wrapper .btouleau-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 9998;
+}
+.btouleau-modal-wrapper .btouleau-modal{
+  background-color: #EFEFEF;
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  bottom: 10%;
+  text-align: center;
+  z-index: 9999;
+}
+.btouleau-with-navbar{
+  padding-top:  80px;
+}
+.btouleau-full-height{
+  height: 100%;
+}
