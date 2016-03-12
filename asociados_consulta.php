@@ -144,17 +144,17 @@ $total_superficie = number_format($count['M2PISOF']);
         <thead>
           <tr>
             <th onclick="sortTable(0)" class="btouleau-sortable-header"> Nombre Comercial </th>
-            <th onclick="sortTable(1)" class="btouleau-sortable-header hidden-xs hidden-sm hidden-md"> Raz&oacute;n Social </th>
-            <th onclick="sortTable(2)" class="btouleau-sortable-header hidden-xs hidden-sm hidden-md"> Tipo de Tienda </th>
-            <th onclick="sortTable(3,true)" class="btouleau-sortable-header hidden-xs hidden-sm hidden-md"> N&uacute;mero de Tiendas </th>
-            <th onclick="sortTable(4,true)" class="btouleau-sortable-header hidden-xs hidden-sm hidden-md"> Superficie de Ventas </th>
-            <th onclick="sortTable(5)" class="btouleau-sortable-header hidden-xs hidden-sm hidden-md"> Direcci&oacute;n </th>
-            <th onclick="sortTable(6)" class="btouleau-sortable-header hidden-xs hidden-sm hidden-md"> Colonia </th>
-            <th onclick="sortTable(7)" class="btouleau-sortable-header hidden-xs hidden-sm hidden-md"> CP Ciudad </th>
-            <th onclick="sortTable(8)" class="btouleau-sortable-header hidden-xs hidden-sm hidden-md"> Estado </th>
-            <th onclick="sortTable(9,true)" class="btouleau-sortable-header hidden-xs hidden-sm hidden-md"> Tel&eacute;fono </th>
-            <th onclick="sortTable(10,true)" class="btouleau-sortable-header hidden-xs hidden-sm hidden-md"> Fax </th>
-            <th class="hidden-xs hidden-sm hidden-md"> Sitio Web </th>
+            <th onclick="sortTable(1)" class="btouleau-sortable-header hidden-xs hidden-sm"> Raz&oacute;n Social </th>
+            <th onclick="sortTable(2)" class="btouleau-sortable-header hidden"> Tipo de Tienda </th>
+            <th onclick="sortTable(3,true)" class="btouleau-sortable-header hidden"> N&uacute;mero de Tiendas </th>
+            <th onclick="sortTable(4,true)" class="btouleau-sortable-header hidden"> Superficie de Ventas </th>
+            <th onclick="sortTable(5)" class="btouleau-sortable-header hidden"> Direcci&oacute;n </th>
+            <th onclick="sortTable(6)" class="btouleau-sortable-header hidden"> Colonia </th>
+            <th onclick="sortTable(7)" class="btouleau-sortable-header hidden"> CP Ciudad </th>
+            <th onclick="sortTable(8)" class="btouleau-sortable-header hidden"> Estado </th>
+            <th onclick="sortTable(9,true)" class="btouleau-sortable-header hidden"> Tel&eacute;fono </th>
+            <th onclick="sortTable(10,true)" class="btouleau-sortable-header hidden"> Fax </th>
+            <th class="hidden-xs hidden"> Sitio Web </th>
             <th> Logotipo </th>
           </tr>
         </thead>
@@ -188,17 +188,17 @@ while ($asociados = mysql_fetch_assoc($result)) {
 ?>
           <tr onclick="$('#btouleau-asociados-row-<?php echo $rowId; ?> .btouleau-hidden').slideToggle();" class="btouleau-asociados-row-content">
               <td><?php echo $nombrecomercial; ?></td>
-              <td class="hidden-xs hidden-sm hidden-md"><?php echo $razonsocial; ?></td>
-              <td class="hidden-xs hidden-sm hidden-md"><?php echo $tipotienda; ?></td>
-              <td class="hidden-xs hidden-sm hidden-md"><?php echo $numtiendas; ?></td>
-              <td class="hidden-xs hidden-sm hidden-md"><?php echo number_format($asociados['M2PISO'], 2)." m&sup2;"; ?></td>
-              <td class="hidden-xs hidden-sm hidden-md"><?php echo $direccion; ?></td>
-              <td class="hidden-xs hidden-sm hidden-md"><?php echo $colonia; ?></td>
-              <td class="hidden-xs hidden-sm hidden-md"><?php echo $cp." ".$ciudad; ?></td>
-              <td class="hidden-xs hidden-sm hidden-md"><?php echo $estado; ?></td>
-              <td class="hidden-xs hidden-sm hidden-md"><?php echo $asociados['asociado_telefono']; ?></td>
-              <td class="hidden-xs hidden-sm hidden-md"><?php echo $asociados['asociado_fax']; ?></td>
-              <td class="hidden-xs hidden-sm hidden-md">
+              <td class="hidden-xs hidden-sm"><?php echo $razonsocial; ?></td>
+              <td class="hidden"><?php echo $tipotienda; ?></td>
+              <td class="hidden"><?php echo $numtiendas; ?></td>
+              <td class="hidden"><?php echo number_format($asociados['M2PISO'], 2)." m&sup2;"; ?></td>
+              <td class="hidden"><?php echo $direccion; ?></td>
+              <td class="hidden"><?php echo $colonia; ?></td>
+              <td class="hidden"><?php echo $cp." ".$ciudad; ?></td>
+              <td class="hidden"><?php echo $estado; ?></td>
+              <td class="hidden"><?php echo $asociados['asociado_telefono']; ?></td>
+              <td class="hidden"><?php echo $asociados['asociado_fax']; ?></td>
+              <td class="hidden">
                 <div class="url">
                   <a href="<?php echo $asociados['asociado_website']; ?>" target="_blank">
                     <?php echo $asociados['asociado_website']; ?>
@@ -213,7 +213,7 @@ while ($asociados = mysql_fetch_assoc($result)) {
             </tr>
             
             
-          <tr id="btouleau-asociados-row-<?php echo $rowId; ?>" class="hidden-lg btouleau-reponsive-row">
+          <tr id="btouleau-asociados-row-<?php echo $rowId; ?>" class="btouleau-reponsive-row">
             <td class="btouleau-hidden" colspan="20">
              <ul>
                <li>Nombre Comercial <label><?php echo $nombrecomercial; ?></label></li>

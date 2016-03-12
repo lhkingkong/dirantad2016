@@ -209,9 +209,8 @@ switch(intval($condition)){
               <?php crearBoton('Buscar','refrescarConsulta()','',"images/16x16/magnifier.png"); ?>
               <?php crearBoton('Excel','abrirExcel()','',"images/16x16/export_excel.png"); ?>
             </div>
-          </div>
-          <!-- container -->
           <div id="contenidoA">&nbsp;</div>
+          </div>
         </section>
 
     </div>
