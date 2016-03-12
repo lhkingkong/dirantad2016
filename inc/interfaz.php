@@ -1,6 +1,6 @@
 <?php
 function crearBoton($texto, $accion, $url, $img_path){
-	$boton = '<button class="botonB" ';
+	$boton = '<button class="btn btn-default" ';
 	if(trim($accion)!="")
 		$boton .= 'onclick="'.$accion.'; return false;"';
 	else
