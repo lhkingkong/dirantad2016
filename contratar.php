@@ -313,7 +313,7 @@ include ("inc/interfaz.php");
           <div class="full-wrapper relative clearfix">
             <!-- Logo ( * your text or image into link tag *) -->
             <div class="nav-logo-wrap local-scroll">
-              <a href="mp-index.html" class="logo">
+              <a href="index.php" class="logo">
                 <img src="images/logoANTAD.png" alt="" />
               </a>
             </div>
@@ -497,7 +497,7 @@ include ("inc/interfaz.php");
 
                 <div class="form-group">
                   <div class="col-sm-offset-3 col-sm-9">
-                    <button type="button" class="btn btn-primary" onclick="insertarRegistro(event)">Registrar</button>
+                    <button type="button" class="submit_btn btn btn-mod btn-medium btn-round" onclick="insertarRegistro(event)">Registrar</button>
                   </div>
                 </div>
               </form>

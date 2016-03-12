@@ -21,13 +21,28 @@
   top: 10%;
   left: 10%;
   right: 10%;
-  bottom: 10%;
   text-align: center;
   z-index: 9999;
+  padding: 10px;
 }
 .btouleau-with-navbar{
   padding-top:  80px;
 }
 .btouleau-full-height{
   height: 100%;
+}
+.btouleau-contratar-div{
+  margin-top: 40px;
+  text-align: center;
+}
+.btouleau-contratar-div a{
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.btouleau-modal-wrapper .btouleau-modal .text_higlight{
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+.btouleau-modal-wrapper .btouleau-modal .btn{
+  margin-top: 10px;
 }

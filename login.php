@@ -133,7 +133,6 @@ if(!empty($_SESSION['e4m'])){
                   <h1 class="hs-line-11 font-alt mb-20 mb-xs-0"><center>Ingresar al<br />Directorio ANTAD 201886</center></h1>
                   <div class="hs-line-4 font-alt">
                     <center>Favor de ingresar su usuario y contraseña.
-                      <br />En caso de no tener, tiene la opción de contratar el directorio
                       <center>
                   </div>
                 </div>
@@ -149,22 +148,6 @@ if(!empty($_SESSION['e4m'])){
           <!-- Section -->
           <section class="page-section">
             <div class="container relative">
-
-              <!-- Nav Tabs -->
-              <div class="align-center mb-40 mb-xxs-30">
-                <ul class="nav nav-tabs tpl-minimal-tabs">
-
-                  <li class="active">
-                    <a href="#mini-one" data-toggle="tab">Conexión</a>
-                  </li>
-
-                  <li>
-                    <a href="#mini-two" data-toggle="tab">Contratación</a>
-                  </li>
-
-                </ul>
-              </div>
-              <!-- End Nav Tabs -->
 
               <!-- Tab panes -->
               <div class="tab-content tpl-minimal-tabs-cont section-text">
@@ -217,50 +200,10 @@ if(!empty($_SESSION['e4m'])){
                     </div>
                   </div>
                   <!-- End Login Form -->
-
-                </div>
-
-                <div class="tab-pane fade" id="mini-two">
-
-                  <!-- Registry Form -->
-                  <div class="row">
-                    <div class="col-md-4 col-md-offset-4">
-
-                      <form class="form contact-form" id="contact_form">
-                        <div class="clearfix">
-
-                          <!-- Email -->
-                          <div class="form-group">
-                            <input type="text" name="Email" id="Email" class="input-md round form-control" placeholder="Email" pattern=".{3,100}" required>
-                          </div>
-
-                          <!-- Username -->
-                          <div class="form-group">
-                            <input type="text" name="username" id="username" class="input-md round form-control" placeholder="Username" pattern=".{3,100}" required>
-                          </div>
-
-                          <!-- Password -->
-                          <div class="form-group">
-                            <input type="password" name="password" id="password" class="input-md round form-control" placeholder="Password" pattern=".{5,100}" required>
-                          </div>
-
-                          <!-- Re-enter Password -->
-                          <div class="form-group">
-                            <input type="password" name="re-password" id="re-password" class="input-md round form-control" placeholder="Re-enter Password" pattern=".{5,100}" required>
-                          </div>
-
-                        </div>
-
-                        <!-- Send Button -->
-                        <div class="pt-10">
-                          <button class="submit_btn btn btn-mod btn-medium btn-round btn-full" id="reg-btn">Register</button>
-                        </div>
-
-                      </form>
-
-                    </div>
+                  <div class="btouleau-contratar-div">
+                    <div>En caso de no contar con una cuenta, tiene la opción de contratar el directorio </div>
+                      <a href="contratar.php" class="btn btn-mod btn-border btn-round btn-medium" target="_self">Contratar Ahora</a>
                   </div>
-                  <!-- End Registry Form -->
 
                 </div>
 
