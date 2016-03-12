@@ -49,9 +49,6 @@
 .btouleau-hidden{
   display: none;
 }
-.btouleau-asociados-row-content{
-  position: relative;
-}
 .btouleau-sortable-header{
   cursor: pointer;
 }
@@ -88,4 +85,8 @@
   text-align: center;
   display: block;
   padding: 5px;
+}
+.btouleau-button-area{
+  padding: 10px;
+  text-align: center;
 }

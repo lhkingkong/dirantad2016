@@ -112,7 +112,6 @@ $total_superficie = number_format($count['M2PISOF']);
 
 
   <div>
-
     <table class="table table-striped table-bordered table-hover btouleau-table">
       <thead>
         <tr>

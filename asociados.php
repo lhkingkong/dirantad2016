@@ -1,9 +1,4 @@
 <?php
-/*
-
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/skeleton.css">
-*/
 
 include ("inc/validar.php");
 include ("inc/connect.php");
@@ -35,11 +30,7 @@ $currentA='asociados';
         <link rel="stylesheet" href="css/animate.min.css">
         <link rel="stylesheet" href="css/vertical-rhythm.min.css">
         <link rel="stylesheet" href="css/owl.carousel.css">
-        <link rel="stylesheet" href="css/magnific-popup.css">        
-
-
-
-
+        <link rel="stylesheet" href="css/magnific-popup.css">
 
 <?php include "inc/jsAll.php"; ?>
       <link rel="stylesheet" href="css/btouleau.css">
