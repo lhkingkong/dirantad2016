@@ -146,17 +146,16 @@ $total_superficie = number_format($count['M2PISOF']);
         <thead>
           <tr>
             <th onclick="sortTable(0)" class="btouleau-sortable-header"> Nombre Comercial </th>
-            <th onclick="sortTable(1)" class="btouleau-sortable-header hidden-xs hidden-sm hidden-md"> Nombre Comercial </th>
-            <th onclick="sortTable(2)" class="btouleau-sortable-header hidden-xs hidden-sm hidden-md"> Raz&oacute;n Social </th>
-            <th onclick="sortTable(3)" class="btouleau-sortable-header hidden-xs hidden-sm hidden-md"> Tipo de Tienda </th>
-            <th onclick="sortTable(4,true)" class="btouleau-sortable-header hidden-xs hidden-sm hidden-md"> N&uacute;mero de Tiendas </th>
-            <th onclick="sortTable(5,true)" class="btouleau-sortable-header hidden-xs hidden-sm hidden-md"> Superficie de Ventas </th>
-            <th onclick="sortTable(6)" class="btouleau-sortable-header hidden-xs hidden-sm hidden-md"> Direcci&oacute;n </th>
-            <th onclick="sortTable(7)" class="btouleau-sortable-header hidden-xs hidden-sm hidden-md"> Colonia </th>
-            <th onclick="sortTable(8)" class="btouleau-sortable-header hidden-xs hidden-sm hidden-md"> CP Ciudad </th>
-            <th onclick="sortTable(9)" class="btouleau-sortable-header hidden-xs hidden-sm hidden-md"> Estado </th>
-            <th onclick="sortTable(10,true)" class="btouleau-sortable-header hidden-xs hidden-sm hidden-md"> Tel&eacute;fono </th>
-            <th onclick="sortTable(11,true)" class="btouleau-sortable-header hidden-xs hidden-sm hidden-md"> Fax </th>
+            <th onclick="sortTable(1)" class="btouleau-sortable-header hidden-xs hidden-sm hidden-md"> Raz&oacute;n Social </th>
+            <th onclick="sortTable(2)" class="btouleau-sortable-header hidden-xs hidden-sm hidden-md"> Tipo de Tienda </th>
+            <th onclick="sortTable(3,true)" class="btouleau-sortable-header hidden-xs hidden-sm hidden-md"> N&uacute;mero de Tiendas </th>
+            <th onclick="sortTable(4,true)" class="btouleau-sortable-header hidden-xs hidden-sm hidden-md"> Superficie de Ventas </th>
+            <th onclick="sortTable(5)" class="btouleau-sortable-header hidden-xs hidden-sm hidden-md"> Direcci&oacute;n </th>
+            <th onclick="sortTable(6)" class="btouleau-sortable-header hidden-xs hidden-sm hidden-md"> Colonia </th>
+            <th onclick="sortTable(7)" class="btouleau-sortable-header hidden-xs hidden-sm hidden-md"> CP Ciudad </th>
+            <th onclick="sortTable(8)" class="btouleau-sortable-header hidden-xs hidden-sm hidden-md"> Estado </th>
+            <th onclick="sortTable(9,true)" class="btouleau-sortable-header hidden-xs hidden-sm hidden-md"> Tel&eacute;fono </th>
+            <th onclick="sortTable(10,true)" class="btouleau-sortable-header hidden-xs hidden-sm hidden-md"> Fax </th>
             <th class="hidden-xs hidden-sm hidden-md"> Sitio Web </th>
             <th> Logotipo </th>
           </tr>
@@ -190,64 +189,17 @@ while ($asociados = mysql_fetch_assoc($result)) {
 
 ?>
           <tr onclick="$('#btouleau-asociados-row-<?php echo $rowId; ?> .btouleau-hidden').slideToggle();" class="btouleau-asociados-row-content">
-              <td>
-                <?php echo $nombrecomercial; ?>
-              </td>
-              <td style="width:220px" class="hidden-xs hidden-sm hidden-md">
-                <div class="tablaFoo">
-                  <?php echo $nombrecomercial; ?>
-                </div>
-              </td>
-              <td class="hidden-xs hidden-sm hidden-md">
-                <div class="tablaFoo">
-                  <?php echo $razonsocial; ?>
-                </div>
-              </td>
-              <td class="hidden-xs hidden-sm hidden-md">
-                <div class="tablaFoo">
-                  <?php echo $tipotienda; ?>
-                </div>
-              </td>
-              <td class="hidden-xs hidden-sm hidden-md">
-                <div class="tablaFoo">
-                  <?php echo $numtiendas; ?>
-                </div>
-              </td>
-              <td class="hidden-xs hidden-sm hidden-md">
-                <div class="tablaFoo">
-                  <?php echo number_format($asociados['M2PISO'], 2)." m&sup2;"; ?>
-                </div>
-              </td>
-              <td class="hidden-xs hidden-sm hidden-md">
-                <div class="tablaFoo">
-                  <?php echo $direccion; ?>
-                </div>
-              </td>
-              <td class="hidden-xs hidden-sm hidden-md">
-                <div class="tablaFoo">
-                  <?php echo $colonia; ?>
-                </div>
-              </td>
-              <td class="hidden-xs hidden-sm hidden-md">
-                <div class="tablaFoo">
-                  <?php echo $cp." ".$ciudad; ?>
-                </div>
-              </td>
-              <td class="hidden-xs hidden-sm hidden-md">
-                <div class="tablaFoo">
-                  <?php echo $estado; ?>
-                </div>
-              </td>
-              <td class="hidden-xs hidden-sm hidden-md">
-                <div class="tablaFoo">
-                  <?php echo $asociados['asociado_telefono']; ?>
-                </div>
-              </td>
-              <td class="hidden-xs hidden-sm hidden-md">
-                <div class="tablaFoo">
-                  <?php echo $asociados['asociado_fax']; ?>
-                </div>
-              </td>
+              <td><?php echo $nombrecomercial; ?></td>
+              <td class="hidden-xs hidden-sm hidden-md"><?php echo $razonsocial; ?></td>
+              <td class="hidden-xs hidden-sm hidden-md"><?php echo $tipotienda; ?></td>
+              <td class="hidden-xs hidden-sm hidden-md"><?php echo $numtiendas; ?></td>
+              <td class="hidden-xs hidden-sm hidden-md"><?php echo number_format($asociados['M2PISO'], 2)." m&sup2;"; ?></td>
+              <td class="hidden-xs hidden-sm hidden-md"><?php echo $direccion; ?></td>
+              <td class="hidden-xs hidden-sm hidden-md"><?php echo $colonia; ?></td>
+              <td class="hidden-xs hidden-sm hidden-md"><?php echo $cp." ".$ciudad; ?></td>
+              <td class="hidden-xs hidden-sm hidden-md"><?php echo $estado; ?></td>
+              <td class="hidden-xs hidden-sm hidden-md"><?php echo $asociados['asociado_telefono']; ?></td>
+              <td class="hidden-xs hidden-sm hidden-md"><?php echo $asociados['asociado_fax']; ?></td>
               <td class="hidden-xs hidden-sm hidden-md">
                 <div class="url">
                   <a href="<?php echo $asociados['asociado_website']; ?>" target="_blank">

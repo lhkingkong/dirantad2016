@@ -64,6 +64,9 @@
 .btouleau-table th{
   text-align: center;
 }
+.btouleau-table.table>tbody>tr>td{
+  vertical-align: middle;
+}
 .btouleau-reponsive-row ul{
   margin: 10px;
   padding: 0;
