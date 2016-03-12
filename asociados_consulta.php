@@ -103,8 +103,11 @@ $total_superficie = number_format($count['M2PISOF']);
     </table>
   </div>
   <div>
-    <div style="margin:auto;position:relative; height: 600px;">
-      <table id="tabla" class="footable">
+    <div class="table-responsive">
+      <table class="table">
+       
+    <!--<div style="margin:auto;position:relative; height: 600px;">
+      <table id="tabla" class="footable">-->
         <thead>
           <tr>
             <th data-class="expand" data-sort-initial="true"> <span title="table sorted by this column on load">Nombre Comercial</span> </th>
