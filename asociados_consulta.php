@@ -112,12 +112,13 @@ $total_superficie = number_format($count['M2PISOF']);
 
 
   <div>
-    
-    <header>
-      <?php echo $txtreport; ?>
-    </header>
 
-    <table class="table demo table-bordered" data-filter="#filter" data-page-size="5" data-page-previous-text="prev" data-page-next-text="next">
+    <table class="table table-striped table-bordered table-hover btouleau-table">
+      <thead>
+        <tr>
+          <th colspan="2"> <?php echo $txtreport; ?> </th>
+        </tr>
+      </thead>
       <tbody>
         <tr>
           <td>Número total de cadenas</td>
@@ -137,18 +138,11 @@ $total_superficie = number_format($count['M2PISOF']);
             <?php echo $total_superficie; ?> m&sup2;</td>
         </tr>
       </tbody>
-      <tfoot class="hide-if-no-paging">
-        <tr>
-          <td colspan="5">
-            <div class="pagination pagination-centered"></div>
-          </td>
-        </tr>
-      </tfoot>
     </table>
   </div>
   <div>
     <div class="table-responsive">
-      <table id="asociados-table" class="table">
+      <table id="asociados-table" class="table table-hover btouleau-table">
         <thead>
           <tr>
             <th onclick="sortTable(0)" class="btouleau-sortable-header"> Nombre Comercial </th>
@@ -269,20 +263,22 @@ while ($asociados = mysql_fetch_assoc($result)) {
             </tr>
             
             
-          <tr id="btouleau-asociados-row-<?php echo $rowId; ?>" class="hidden-lg">
+          <tr id="btouleau-asociados-row-<?php echo $rowId; ?>" class="hidden-lg btouleau-reponsive-row">
             <td class="btouleau-hidden" colspan="20">
              <ul>
-               <li><?php echo $nombrecomercial; ?></li>
-               <li><?php echo $razonsocial; ?></li>
-               <li><?php echo $tipotienda; ?></li>
-               <li><?php echo $numtiendas; ?></li>
-               <li><?php echo number_format($asociados['M2PISO'], 2)." m&sup2;"; ?></li>
-               <li><?php echo $direccion; ?></li>
-               <li><?php echo $colonia; ?></li>
-               <li><?php echo $cp." ".$ciudad; ?></li>
-               <li><?php echo $estado; ?></li>
-               <li><?php echo $asociados['asociado_telefono']; ?></li>
-               <li><?php echo $asociados['asociado_fax']; ?></li>
+               <li>Nombre Comercial <label><?php echo $nombrecomercial; ?></label></li>
+               <li>Raz&oacute;n Social <label><?php echo $razonsocial; ?></label></li>
+               <li>Tipo de Tienda <label><?php echo $tipotienda; ?></label></li>
+               <li>N&uacute;mero de Tiendas <label><?php echo $numtiendas; ?></label></li>
+               <li>Superficie de Ventas <label><?php echo number_format($asociados['M2PISO'], 2)." m&sup2;"; ?></label></li>
+               <li>Direcci&oacute;n 
+                 <label><?php echo $direccion; ?></label>
+                 <label><?php echo $colonia; ?></label>
+                 <label><?php echo $cp." ".$ciudad; ?></label>
+                 <label><?php echo $estado; ?></label>
+               </li>
+               <li>Tel&eacute;fono <a href="tel:<?php echo $asociados['asociado_telefono']; ?>"><?php echo $asociados['asociado_telefono']; ?></a></li>
+               <li>Fax <label><?php echo $asociados['asociado_fax']; ?></label></li>
                <li><a href="<?php echo $asociados['asociado_website']; ?>" target="_blank">
                  <?php echo $asociados['asociado_website']; ?>
                  </a></li>

@@ -58,3 +58,27 @@
 .btouleau-sortable-header:hover{
   color: #A00;
 }
+.btouleau-table{
+  margin-top: 20px;
+}
+.btouleau-table th{
+  text-align: center;
+}
+.btouleau-reponsive-row ul{
+  margin: 10px;
+  padding: 0;
+}
+.btouleau-reponsive-row li{
+  list-style: none;
+}
+.btouleau-reponsive-row li label{
+  display: block;
+  font-weight: bold;
+  text-align: center;
+}
+.btouleau-reponsive-row li a{
+  color: blue;
+  text-align: center;
+  display: block;
+  padding: 5px;
+}
