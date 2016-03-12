@@ -42,11 +42,7 @@ $currentA='asociados';
 
 
 <?php include "inc/jsAll.php"; ?>
-      <link href="css/footable-0.1.css" rel="stylesheet" type="text/css" />
-      <link href="css/footable.sortable-0.1.css" rel="stylesheet" type="text/css" />
-      <script src="js/footable-0.1.js" type="text/javascript"></script>
-      <script src="js/footable.sortable.js" type="text/javascript"></script>
-      <script src="js/footable.filter.js" type="text/javascript"></script>
+      <link rel="stylesheet" href="css/btouleau.css">
 <script type="text/javascript">
 
 	$intentosMAX = 20;

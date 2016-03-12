@@ -46,3 +46,15 @@
 .btouleau-modal-wrapper .btouleau-modal .btn{
   margin-top: 10px;
 }
+.btouleau-hidden{
+  display: none;
+}
+.btouleau-asociados-row-content{
+  position: relative;
+}
+.btouleau-sortable-header{
+  cursor: pointer;
+}
+.btouleau-sortable-header:hover{
+  color: #A00;
+}
