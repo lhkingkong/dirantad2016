@@ -141,7 +141,6 @@ $total_superficie = number_format($count['M2PISOF']);
     </table>
   </div>
   <div>
-    <div class="table-responsive">
       <table id="asociados-table" class="table table-hover btouleau-table">
         <thead>
           <tr>
@@ -207,7 +206,7 @@ while ($asociados = mysql_fetch_assoc($result)) {
                   </a>
                 </div>
               </td>
-              <td style="width:220px"><img title="active" src="images/logos/100x100/<?php echo $logo; ?>.jpg" style="height: 80px; width: 80px" />
+              <td class="btouleau-logotipo-td"><img title="active" src="images/logos/100x100/<?php echo $logo; ?>.jpg" style="height: 80px; width: 80px" />
                 <?php if ($logo2){ ?>
                   <img title="active" width="80" height="80" src="images/logos/100x100/<?php echo $logo2; ?>.jpg" style="height: 80px; width: 80px" />
                 <?php } ?>
@@ -242,7 +241,7 @@ while ($asociados = mysql_fetch_assoc($result)) {
 ?>
         </tbody>
       </table>
-    </div>
+    
     <div class="clear"></div>
   </div>
   </div>

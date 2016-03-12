@@ -67,6 +67,10 @@
 .btouleau-table.table>tbody>tr>td{
   vertical-align: middle;
 }
+.btouleau-table.table .btouleau-logotipo-td{
+  min-width: 180px;
+  text-align: right;
+}
 .btouleau-reponsive-row ul{
   margin: 10px;
   padding: 0;
