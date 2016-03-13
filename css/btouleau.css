@@ -24,6 +24,8 @@
   text-align: center;
   z-index: 9999;
   padding: 10px;
+  max-height: 80%;
+  overflow-y: auto;
 }
 .btouleau-with-navbar{
   padding-top:  80px;
@@ -107,4 +109,79 @@
   max-width: 50px;
   max-height: 50px;
   margin-right: 10px;
+}
+
+@media only screen and (min-width: 959px){
+  .organigrama{
+    width:850px;
+    margin:auto;
+    background-image:url(../images/diagrama2016.png);
+    background-position:-101px -18px;
+    padding-left:20px;
+    background-repeat:no-repeat;
+    overflow: hidden;
+    font-size: 13px;
+  }
+  .organigrama div{
+    background-color:#FFF;
+    background-repeat:repeat-x;
+    border: 1px solid #CCCCCC;
+    padding:5px;
+    border-radius:2px;
+    margin:2px auto;
+    text-align:center;
+    width:150px;
+    color:#333;
+    text-shadow:2px 2px 5px #FFF;
+  }
+  .organigrama div:hover{
+    background-color:#666;
+    color:#FFF;
+    text-shadow:2px 2px 5px #333;
+    cursor:pointer;
+  }
+  .organigrama .clear{
+    clear: both;
+    display: block;
+    visibility: hidden;
+  }
+  #oC{
+    float:left;
+    width:300px;
+  }
+  #oD{
+    float:right;
+    width:300px;
+  }
+  #oE{
+    float:left;
+    width:25%px;
+    margin:2px;
+  }
+  #oF{
+    float:left;
+    width:25%px;
+    margin:2px;
+  }
+  #oG{
+    float:right;
+    width:25%px;
+    margin:2px;
+  }
+  #oH{
+    float:right;
+    width:25%px;
+    margin:2px;
+  }
+  #oM,#oN,#oI,#oJ,#oK,#oL,#oP{
+    float:left;
+    width:20%px;
+    margin:2px;
+  }
+  .bigOrg{
+    display:block;
+  }
+  .smallOrg{
+    display:none;
+  }
 }

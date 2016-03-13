@@ -178,7 +178,11 @@ function alerta($titulo,$descripcion,$onclick){
 }
 
 function alertaDiv($div){
+  var content = $($div).children().clone();
+  $('.btouleau-modal').empty();
+  $('.btouleau-modal').append(content);
   $('.btouleau-modal-wrapper').show('slow');
+  $('.btouleau-modal').scrollTop(0);
 }
 
 function cerrarMensaje(){
