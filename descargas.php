@@ -1,94 +1,111 @@
 <?php include ("inc/validar.php");
 $currentA='antad'; ?>
-<!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
-<head>
-	<!-- Basic Page Needs
-  ================================================== -->
-	<!-- Mobile Specific Metas
-  ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta charset="utf-8">
-	<!-- CSS
-  ================================================== -->
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/skeleton.css">
-	<link rel="stylesheet" href="css/layout.css">
-    <?php include "inc/jsAll.php"; ?>
-    <!-- bxSlider Javascript file -->
-    <script src="js/jquery.bxslider.min.js"></script>
-    <!-- bxSlider CSS file -->
-    <link href="css/jquery.bxslider.css" rel="stylesheet" />
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-	<!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="images/faviconAntad.ico">
-<link rel="apple-touch-icon" href="images/faviconAntad57.png">
-<link rel="apple-touch-icon" sizes="72x72" href="images/faviconAntad72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="images/faviconAntad114.png">
-  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
+  <!DOCTYPE html>
+  <html>
 
-	<?php include "inc/jsAll.php"; ?>
-	<title>Directorio ANTAD 2015</title>
-	<link rel="stylesheet" href="css/jquery-ui.css" />
-<link rel="stylesheet" href="css/jquery/jquery-ui-1.10.1.custom.css">
-	<script src="js/ui/jquery.ui.core.js"></script>
-	<script src="js/ui/jquery.ui.widget.js"></script>
-	<script src="js/ui/jquery.ui.tabs.js"></script>
-	<script>
-	$(function() {
-		$( "#tabs" ).tabs();
-	});
-    </script>
-	 
-</head>
-<body>
-<?php include "header.php" ?>
-<?php include "mainmenu.php" ?>
+  <head>
+    <title>Directorio ANTAD 2016</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta charset="utf-8">
+    <meta name="author" content="Admin">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
-	<!-- Primary Page Layout
-	================================================== -->
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
-	<!-- Delete everything in this .container and get started on your own site! -->
-<div class="fullscreen">
-<div class="container contenidoA">
-	  			  		         
-	  		<div class="fullcontainer">    
-				<div class="content_block leftTitle">    
-					<p class="title">Descargas</p>		
-				</div>							
-			</div>        
-        
-			<div class="sixteen columns content_justify">
-					<div class="titulomovil">    
-					<p><titulos>Descargas</titulos></p>
-					</div>					
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-responsive.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/vertical-rhythm.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/btouleau.css">
+  </head>
 
-			<ul class="listaAnidada"> 
-				<li><a href="downloads/Directorio2015-Asociados_Estados.xlsx" target="new">Tiendas m2 Cadenas por Estado</a></li>
-				<br>
-				<li><a href="downloads/Directorio2015_Estados_y_Cadenas.xlsx" target="new">Tiendas m2 Estado y Cadena</a></li>
-				<br>
-				<li><a href="downloads/Directorio2015-Asociados_Zonas.xlsx" target="new">Tiendas m2 Zona y Cadena</a></li>
-				<br>
-				<li><a href="downloads/Directorio2015-Asociados_Subtipos-Zonas.xlsx">Tiendas m2 Subtipo y Zona</a></li>
-			  </ul>
-            </p>		
-		
+  <body class="appear-animate">
+
+    <!-- Page Loader -->
+    <div class="page-loader">
+      <div class="loader">Loading...</div>
+    </div>
+    <!-- End Page Loader -->
+
+    <!-- Page Wrap -->
+    <div class="page" id="top">
+
+      <?php include "menu.php" ?>
 
 
-	
-		</div>
-	</div><!-- container -->
-	
-<!-- End Document
-================================================== -->
+        <!-- Head Section -->
+        <section class="small-section bg-dark-alfa-30 parallax-2" data-background="images/background-red.png">
+          <div class="relative container align-left">
 
-<?php include "footer.php" ?>
-</body>
-</html>
+            <div class="row">
+
+              <div class="col-md-12">
+                <h1 class="font-alt mb-20 mb-xs-0">Directorio ANTAD 2016</h1>
+                <h1 class="font-alt" align="center">Descargas</h1>
+              </div>
+
+
+            </div>
+
+          </div>
+        </section>
+        <!-- End Head Section -->
+
+        <section class="page-section">
+          <div class="container relative">
+            <div class="col-md-12">
+
+              <ul class="listaAnidada">
+                <li><a href="downloads/Directorio2015-Asociados_Estados.xlsx" target="new">Tiendas m2 Cadenas por Estado 2015</a></li>
+                <br>
+                <li><a href="downloads/Directorio2015_Estados_y_Cadenas.xlsx" target="new">Tiendas m2 Estado y Cadena 2015</a></li>
+                <br>
+                <li><a href="downloads/Directorio2015-Asociados_Zonas.xlsx" target="new">Tiendas m2 Zona y Cadena 2015</a></li>
+                <br>
+                <li><a href="downloads/Directorio2015-Asociados_Subtipos-Zonas.xlsx">Tiendas m2 Subtipo y Zona 2015</a></li>
+              </ul>
+            </div>
+            <!-- container -->
+          </div>
+        </section>
+    </div>
+
+    <!-- JS -->
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/SmoothScroll.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="js/jquery.localScroll.min.js"></script>
+    <script type="text/javascript" src="js/jquery.viewport.mini.js"></script>
+    <script type="text/javascript" src="js/jquery.countTo.js"></script>
+    <script type="text/javascript" src="js/jquery.appear.js"></script>
+    <script type="text/javascript" src="js/jquery.sticky.js"></script>
+    <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
+    <script type="text/javascript" src="js/gmap3.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/jquery.simple-text-rotator.min.js"></script>
+    <script type="text/javascript" src="js/all.js"></script>
+    <script type="text/javascript" src="js/contact-form.js"></script>
+    <script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>
+    <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
+  </body>
+
+  </html>

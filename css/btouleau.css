@@ -93,3 +93,18 @@
 .btouleau-reduce-size{
   font-size: 0.9em;
 }
+.btouleau-thumbsnail-list{
+  list-style: none;
+}
+.btouleau-thumbsnail-list li{
+  display: inline-block;
+}
+.btouleau-url-list a{
+  color: blue;
+  text-decoration: none;
+}
+.btouleau-thumbsnail-list li img{
+  max-width: 50px;
+  max-height: 50px;
+  margin-right: 10px;
+}
