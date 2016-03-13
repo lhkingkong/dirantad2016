@@ -78,7 +78,7 @@
                                 <ul class="mn-sub mn-has-multi">
                                     
                                     <li class="mn-sub-multi">
-                                                <a href="#asociacion">La Asociación ANTAD</a>
+                                                <a href="antad.php">La Asociación ANTAD</a>
                                         <ul>
 
                                             <li>
