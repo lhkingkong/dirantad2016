@@ -1,6 +1,6 @@
 <?php include ("inc/validar.php");
 $currentA='antad'; ?>
-  <!DOCTYPE html>
+<!DOCTYPE html>
   <html>
 
   <head>
