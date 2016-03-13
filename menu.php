@@ -45,7 +45,7 @@
                                                 <a href="reportes_tipos.php">Reportes por Tipos</a>
                                             </li>
                                             <li>
-                                                <a href="reportes_tipos.php">Descargas</a>
+                                                <a href="descargas.php">Descargas</a>
                                             </li>
 
                                         </ul>
