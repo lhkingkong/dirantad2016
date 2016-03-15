@@ -6,6 +6,11 @@ if(!isset($_GET['condition']))
 else
 	$condition = $_GET['condition'];
 
+if(!isset($_GET['asociado']))
+  $asociado = 0;
+else
+  $asociado = $_GET['asociado'];
+
 $where = "";
 
 switch(intval($condition)){
@@ -24,6 +29,11 @@ switch(intval($condition)){
 	default:
 				$txtreport ="Listado general de las cadenas asociadas a ANTAD";
 				break;
+}
+if(intval($asociado)!=0){
+  $where .= " AND asociados_estados.asociado_id = $asociado ";
+  $txtreport .= " del asociado ".obtenerNombreAsociado($asociado);
+  $tieneAsociado = true;
 }
 
 $query = " SELECT asociados.*, CASE asociados.asociado_tipo_id

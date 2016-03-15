@@ -48,7 +48,7 @@ $currentA='asociados';
           //if($.browser.msie)
           $IEcadena = "&ie=" + Math.floor((Math.random() * 100) + 1);
 
-          $("#content").load('asociados_consulta.php?condition=' + $('#tipo').val() + $IEcadena,
+          $("#content").load('asociados_consulta.php?condition=' + $('#tipo').val() + '&asociado=' + $('#asociado').val() + $IEcadena,
             function (response, status, xhr) {
               if (status != "error") {
                 $('#content').show('slow');
@@ -65,14 +65,42 @@ $currentA='asociados';
           return false;
         }
 
+        function cargarAsociados() {
+          $('#asociado').html('<option selected>Cargando</option>');
+          $intentos = $intentosMAX;
+          cargarAsociadosAJAX();
+        }
+
+        function cargarAsociadosAJAX() {
+          jQuery.ajax({
+            type: "GET",
+            url: 'php/cargarAsociados.php?tipo=' + $('#tipo').val(),
+            /*dataType:"html",*/
+            //data:"cve_mat="+$cve_mat,
+            success: function (responseText) {
+              $('#asociado').html(responseText);
+              $('#asociado').val('a');
+            }, //fin success
+            error: function (xhr, ajaxOptions, thrownError) {
+              if ($intentos < 1) {
+                mandarMensaje("Lo sentimos, su conexi&oacute;n con el servidor se ha perdido, favor de contactarse con nosotros. ");
+              } else {
+                $intentos--;
+                cargarAsociadosAJAX();
+              }
+            }
+          });
+        }
+
         $(function () {
           //$('#tabla').footable();
           $('#tipo').val('a');
+          $('#asociado').val('a');
           $('#refrescar').click();
         });
 
         function abrirExcel() {
-          window.open("excel/asociados_excel.php?condition=" + $('#tipo').val(), "_blank");
+          window.open("excel/asociados_excel.php?condition=" + $('#tipo').val()+ '&asociado=' + $('#asociado').val(), "_blank");
         }
       </script>
       <style type="text/css">
@@ -124,11 +152,12 @@ $currentA='asociados';
         <!-- Section Asociación -->
         <section class="page-section" id="asociacion">
           <div class="relative container">
-          <div class="section-text">
-            <div>Tipo de tienda</div>
-            <select id="tipo">
-              <option value="a" selected>TODOS</option>
-              <?php
+            <div class="row">
+              <div class="col-md-4">
+                <div>Tipo de tienda</div>
+                <select id="tipo" onChange="cargarAsociados(); return false;" class="form-control">
+                  <option value="a" selected>TODOS</option>
+                  <?php
 			$query = " SELECT * FROM tiendas_tipos
 						ORDER BY tienda_tipo ";
 			$result = mysql_query($query);
@@ -138,13 +167,31 @@ $currentA='asociados';
 				}
 			}
 ?>
-            </select>
-          </div>
-          <div class="btouleau-button-area">
-            <?php crearBoton('Buscar','refrescarConsulta()','',"images/16x16/magnifier.png"); ?>
-              <?php crearBoton('Excel','abrirExcel()','',"images/16x16/export_excel.png"); ?>
-          </div>
-          <div id="content">&nbsp;</div>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <div>Asociado</div>
+                <select id="asociado" class="form-control">
+                  <option value="a" selected>TODOS</option>
+                  <?php
+                $query = " SELECT * FROM asociados
+						ORDER BY asociado_nombrecomercial ";
+                $result = mysql_query($query);
+                if($result){
+                  while($values = mysql_fetch_assoc($result)){
+                    echo '<option value="'.$values['asociado_id'].'">'.utf8_encode($values['asociado_nombrecomercial']).'</option>';
+                  }
+                }
+                ?>
+                </select>
+              </div>
+            </div>
+
+            <div class="btouleau-button-area">
+              <?php crearBoton('Buscar','refrescarConsulta()','',"images/16x16/magnifier.png"); ?>
+                <?php crearBoton('Excel','abrirExcel()','',"images/16x16/export_excel.png"); ?>
+            </div>
+            <div id="content">&nbsp;</div>
           </div>
         </section>
         <!-- End Section -->
